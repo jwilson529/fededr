@@ -1,0 +1,110 @@
+/**
+Open Sans, Light, 32px, #fff
+Open Sans, Bold, 50px, #fff, line-height: 48px
+Source Sans Pro, semi-bold, 30px, #36abe1, line-height: 20px
+Source Sans Pro, Regular, 18px, #9ba0a4, line-height: 60px
+Source Sans Pro, semibold, 18px, #36abe1, line-height:60px
+Source Sans Pro, light, 18px, #5c6366, line-height: 20px
+Helvetica, Reg, 13px, #65686f, line-height: 18px
+Links #6fbee7
+Helvetica, Reg, 13px, #65686f
+grey bg: #bbbfc2
+gradient: #ebeced - #d1d5d6
+
+*/
+
+
+/* Import fonts */
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,700|Source+Sans+Pro:300,400,600';
+
+/* Body */
+
+body {
+    background-color: #bbbfc2;
+}
+
+
+/* Mixins */
+
+.openSansLight {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: #fff;
+}
+
+.openSansBold {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+    line-height: 48px;
+}
+
+.sourceSansSemiLg {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #36abe1;
+    line-height: 20px;
+}
+
+.sourceSansReg {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #9ba0a4;
+    line-height: 60px;
+}
+
+.sourceSansLight {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #5c6366;
+    line-height: 20px;
+}
+
+.sourceSansSemiSm {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #36abe1;
+    line-height: 60px
+}
+
+.helveticaReg {
+	font-family: 'Helvetica';
+	font-size: 13px;
+	color:	#65686f;
+	line-height: 18px;
+	a {
+		color: #6fbee7
+	}
+}
+
+.helveticaRegNormalLH {
+	line-height: normal;
+}
+
+.grad {
+    background: #ebeced;
+    background: -webkit-linear-gradient(left, #ebeced, #d1d5d6);
+    background: -o-linear-gradient(right, #ebeced, #d1d5d6);
+    background: -moz-linear-gradient(right, #ebeced, #d1d5d6);
+    background: linear-gradient(to right, #ebeced, #d1d5d6);
+}
+
+
+/**/
+
+.links {
+	.helveticaReg;
+}
+
+.sidebar {
+	width: 500px;
+	height: 200px;
+	.grad;
+}
