@@ -24,6 +24,33 @@ body {
     background-color: #bbbfc2;
 }
 
+#wrapper {
+    width: 980px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+header {
+    height: 276px;
+    background-image: url('/images/header.jpg');
+    background-repeat: no-repeat;
+    padding-bottom: 60px;    
+}
+
+header h1 {
+    .openSansLight;
+    float: right;
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+
+header h1 span {
+    .openSansBold;
+    text-transform: uppercase;
+}
+
 
 /* Mixins */
 
@@ -75,17 +102,17 @@ body {
 }
 
 .helveticaReg {
-	font-family: 'Helvetica';
-	font-size: 13px;
-	color:	#65686f;
-	line-height: 18px;
-	a {
-		color: #6fbee7
-	}
+    font-family: 'Helvetica';
+    font-size: 13px;
+    color: #65686f;
+    line-height: 18px;
+    a {
+        color: #6fbee7
+    }
 }
 
 .helveticaRegNormalLH {
-	line-height: normal;
+    line-height: normal;
 }
 
 .grad {
@@ -100,11 +127,37 @@ body {
 /**/
 
 .links {
-	.helveticaReg;
+    .helveticaReg;
 }
 
-.sidebar {
-	width: 500px;
-	height: 200px;
-	.grad;
+#sideBar {
+    float: left;
+    width: 300px;
+    .grad;
+}
+
+#sideBar li {
+    list-style-type: none;
+    .sourceSansReg;
+    border-bottom:  1px solid white;
+}
+
+#content {
+    float: right;
+    width: 540px;
+    margin-right:70px;
+    overflow: hidden;
+
+}
+
+.babyStepNum {
+    .sourceSansSemiLg;
+}
+.babyStepDesc {
+    .sourceSansLight;
+    padding-bottom: 24px;
+}
+.babyStepText {
+    .helveticaReg;
+    padding-bottom: 40px;
 }

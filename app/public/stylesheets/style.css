@@ -18,6 +18,36 @@ gradient: #ebeced - #d1d5d6
 body {
   background-color: #bbbfc2;
 }
+#wrapper {
+  width: 980px;
+  height: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+header {
+  height: 276px;
+  background-image: url('/images/header.jpg');
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+}
+header h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  color: #fff;
+  float: right;
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 70px;
+}
+header h1 span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #fff;
+  line-height: 48px;
+  text-transform: uppercase;
+}
 /* Mixins */
 .openSansLight {
   font-family: 'Open Sans', sans-serif;
@@ -89,12 +119,52 @@ body {
 .links a {
   color: #6fbee7;
 }
-.sidebar {
-  width: 500px;
-  height: 200px;
+#sideBar {
+  float: left;
+  width: 300px;
   background: #ebeced;
   background: -webkit-linear-gradient(left, #ebeced, #d1d5d6);
   background: -o-linear-gradient(right, #ebeced, #d1d5d6);
   background: -moz-linear-gradient(right, #ebeced, #d1d5d6);
   background: linear-gradient(to right, #ebeced, #d1d5d6);
+}
+#sideBar li {
+  list-style-type: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #9ba0a4;
+  line-height: 60px;
+  border-bottom: 1px solid white;
+}
+#content {
+  float: right;
+  width: 540px;
+  margin-right: 70px;
+  overflow: hidden;
+}
+.babyStepNum {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #36abe1;
+  line-height: 20px;
+}
+.babyStepDesc {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #5c6366;
+  line-height: 20px;
+  padding-bottom: 24px;
+}
+.babyStepText {
+  font-family: 'Helvetica';
+  font-size: 13px;
+  color: #65686f;
+  line-height: 18px;
+  padding-bottom: 40px;
+}
+.babyStepText a {
+  color: #6fbee7;
 }
